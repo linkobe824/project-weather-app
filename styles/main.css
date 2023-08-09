@@ -84,4 +84,42 @@ main {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 1fr;
+}
+
+/* main top*/
+.main__top {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 1fr;
+  color: #d1e2ee;
+}
+.main__top__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__top__left img {
+  height: auto;
+  width: 6rem;
+}
+.main__top__center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.main__top__center .city {
+  font-size: 8rem;
+}
+.main__top__center .region-country {
+  font-size: 2rem;
+}
+.main__top__right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.main__top__right .weather-img img {
+  width: 7rem;
 }/*# sourceMappingURL=main.css.map */

@@ -34,15 +34,17 @@
           <img src="/images/placeholder.png" alt="icon depicting day or night">
         </div>
         <div class="main__top__center">
-          <p class="city">City</p>
+          <div class="city">City</div>
           <div class="region-country">
-            <p class="region">Region</p>
-            <p class="country">Country</p>
+            <span class="region">Region</span>, <span class="counrty">Country</span>
           </div>
         </div>
         <div class="main__top__right">
           <div class="toggle">
-            <p>switch</p>
+            <input type="radio" id="cel" name="units" value="cel" checked="checked" >
+            <label for="cel">Cº</label>
+            <input type="radio" name="units" id="fah" value="fah">
+            <label for="fah">Fº</label>
           </div>
           <div class="weather-img">
             <img src="/images/placeholder.png" alt="icon depicting the weather">

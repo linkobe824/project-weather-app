@@ -40,7 +40,6 @@ header {
     background-color: $primary-color;
     height: 3rem;
     grid-area: header
-    
 }
 
 /*navbar*/
@@ -103,4 +102,48 @@ main {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
+}
+
+/* main top*/
+.main__top {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 1fr;
+    color: $text-color;
+    
+    &__left {
+        @include flex;
+        justify-content: center;
+        
+        img {
+            height: auto;
+            width: 6rem;
+        }
+    }
+    &__center{
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .city {
+            font-size: 8rem;
+        }
+        .region-country {
+            font-size: 2rem;
+        }
+    }
+    &__right{
+        @include flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .toggle{
+            
+        }
+        .weather-img{
+            
+            img {
+                width: 7rem;
+            }
+        }
+    }
 }
