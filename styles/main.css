@@ -1,0 +1,87 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;400;500;700;800&display=swap");
+/*colores*/
+/*colores de clima*/
+/* normalize */
+body {
+  min-height: 100vh;
+  background-color: #c5e3f7;
+  padding: 0;
+  margin: 0;
+  font-family: "Sora", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 1fr;
+  grid-template-areas: "header" "main";
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Mixin */
+/* header */
+header {
+  background-color: #75C2F6;
+  height: 3rem;
+  grid-area: header;
+}
+
+/*navbar*/
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f0f8fd;
+  height: 100%;
+}
+.nav__logo__container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+.nav__logo__container .nav__logo {
+  color: #f0f8fd;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.nav__logo__container .nav__reference {
+  font-size: 0.7rem;
+}
+.nav__logo__container .nav__reference a {
+  color: #f0f8fd;
+}
+.nav__search {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+.nav__search #nav__input {
+  height: 1.5rem;
+  border-radius: 3px;
+  border: 1px solid #f0f8fd;
+}
+.nav__search button {
+  height: 1.5rem;
+  background-color: transparent;
+  border: none;
+  color: #f0f8fd;
+  transition: background-color 0.5s ease-in-out;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.nav__search button:hover {
+  background-color: #912bb9;
+  cursor: pointer;
+}
+
+/* Main */
+main {
+  grid-area: main;
+  background-color: #3485d6;
+  margin: 0 10%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+}/*# sourceMappingURL=main.css.map */

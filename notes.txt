@@ -1,0 +1,77 @@
+- buscar una locacion especifica
+- cambiar entre fahrenheit y celsius
+- cambiar el estilo de la pagina dependiendo de la temperatura
+    - color, imgs, gifs que describan el clima
+
+url para observar la respuesta en json
+{
+    "location"{
+        "name",
+        "region",
+        "country"
+    },
+    "current"{
+        "temp_c",
+        "temp_f",
+        "is_dat" (0,1),
+        "condition":{
+            "text": clear, cloudy etc, (*)
+            "icon": url
+            "code": codigo del texto.  (*)
+        }
+    }
+}
+
+* utilizar alguno de estos para el cambio de estilo (code) - gif (text)
+
+http://api.weatherapi.com/v1/current.json?key=0b65e33d4c094f19a38192914230408&q=London
+
+url 7 dias pronostico
+http://api.weatherapi.com/v1/forecast.json?key=0b65e33d4c094f19a38192914230408&q=culiacan&days=7
+
+{
+ location: {
+ 	name,
+ 	region,
+ 	country 
+ },
+ current:{
+ 	temp_c,
+ 	temp_f,
+ 	is_day,
+ 	humidity,
+ 	condition:{
+ 		code (para el color),
+ 		icon : url,
+ 		text (para el gif)
+ 	}	
+ },
+ forecast:{
+ 	forecastday [array de 7 elementos]
+ 		[0-6] : {
+ 			date: "2023-08-07", (example date)
+			day:{
+				avgtemp_c,
+				avgtemp_f,
+				maxtemp_c,
+				maxtemp_f,
+				mintemp_c,
+				mintemp_f,
+				condition: {
+					code,
+					icon,
+					text,
+				}
+			} 		
+ 		}
+ 		
+ }
+}
+
+
+-condiciones de clima - usar para cambiar el color del fondo o añadir un gif relacionado
+https://www.weatherapi.com/docs/weather_conditions.json
+
+-iconos en imgs
+
+thanks - Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>

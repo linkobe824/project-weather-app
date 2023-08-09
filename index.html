@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/8b1e4670f2.js" crossorigin="anonymous"></script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="nav container-layout">
+        <div class="nav__logo__container">
+          <a href="#" class="nav__logo">WeATHER App</a>
+          <div class="nav__reference">
+            Powered by
+            <a href="https://www.weatherapi.com/" title="Free Weather API"
+              >WeatherAPI.com</a
+            >
+          </div>
+        </div>
+        <div class="nav__search">
+          <input type="search" name="search-city" id="nav__input">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main>
+      <div class="main__top">
+        <div class="main__top__left">
+          <img src="/images/placeholder.png" alt="icon depicting day or night">
+        </div>
+        <div class="main__top__center">
+          <p class="city">City</p>
+          <div class="region-country">
+            <p class="region">Region</p>
+            <p class="country">Country</p>
+          </div>
+        </div>
+        <div class="main__top__right">
+          <div class="toggle">
+            <p>switch</p>
+          </div>
+          <div class="weather-img">
+            <img src="/images/placeholder.png" alt="icon depicting the weather">
+          </div>
+        </div>
+      </div>
+      <div class="main__middle"></div>
+      <div class="main__bottom"></div>
+    </main>
+  </body>
+</html>
