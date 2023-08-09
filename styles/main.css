@@ -72,7 +72,7 @@ header {
   border-bottom-right-radius: 3px;
 }
 .nav__search button:hover {
-  background-color: #912bb9;
+  background-color: #ebb433;
   cursor: pointer;
 }
 
@@ -122,4 +122,37 @@ main {
 }
 .main__top__right .weather-img img {
   width: 7rem;
+}
+
+/* main-middle */
+.main__middle {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 1fr;
+  color: #d1e2ee;
+}
+.main__middle__left {
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-left: 25%;
+  color: #ebb433;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.main__middle__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__middle__right .temp {
+  font-size: 18rem;
+  display: flex;
+}
+.main__middle__right .temp__unit {
+  font-size: 4rem;
+  padding-top: 4rem;
 }/*# sourceMappingURL=main.css.map */

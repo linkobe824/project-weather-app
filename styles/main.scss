@@ -4,7 +4,7 @@
 
 /*colores*/
 $primary-color:#75C2F6;
-$secondary-color:#912bb9;
+$secondary-color:#ebb433;
 $title-color:#f0f8fd;
 $text-color:#d1e2ee;
 $body-color:#c5e3f7;;
@@ -143,6 +143,38 @@ main {
             
             img {
                 width: 7rem;
+            }
+        }
+    }
+}
+
+/* main-middle */
+.main__middle {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 1fr;
+    color: $text-color;
+
+    &__left {
+        @include flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+        padding-left: 25%;
+        color: $secondary-color;
+        font-weight: 500 ;
+        font-size: 1.2rem;
+    }
+    &__right {
+        @include flex;
+        justify-content: center;
+        .temp {
+            font-size: 18rem;
+            display: flex;
+            &__unit {
+                font-size: 4rem;
+                padding-top: 4rem;
             }
         }
     }
