@@ -5,7 +5,7 @@
 /* normalize */
 body {
   min-height: 100vh;
-  background-color: #c5e3f7;
+  background-color: rgb(197, 227, 247);
   padding: 0;
   margin: 0;
   font-family: "Sora", sans-serif;
@@ -149,10 +149,32 @@ main {
   justify-content: center;
 }
 .main__middle__right .temp {
-  font-size: 18rem;
+  font-size: 15rem;
   display: flex;
 }
 .main__middle__right .temp__unit {
   font-size: 4rem;
   padding-top: 4rem;
+}
+
+/* main-bottom */
+.main__bottom {
+  height: 70%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.forecast__container {
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px rgba(197, 227, 247, 0.4);
+  background-color: rgba(197, 227, 247, 0.6);
+  display: flex;
+  justify-content: space-around;
+}
+.forecast__container__card {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */

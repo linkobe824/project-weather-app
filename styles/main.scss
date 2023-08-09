@@ -7,7 +7,7 @@ $primary-color:#75C2F6;
 $secondary-color:#ebb433;
 $title-color:#f0f8fd;
 $text-color:#d1e2ee;
-$body-color:#c5e3f7;;
+$body-color:rgb(197, 227, 247);
 $main-color:#3485d6;
 /*colores de clima*/
 
@@ -170,12 +170,34 @@ main {
         @include flex;
         justify-content: center;
         .temp {
-            font-size: 18rem;
+            font-size: 15rem;
             display: flex;
             &__unit {
                 font-size: 4rem;
                 padding-top: 4rem;
             }
         }
+    }
+}
+
+/* main-bottom */
+.main__bottom {
+    height: 70%;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.forecast__container {
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(197, 227, 247, 0.4);
+    background-color: rgba(197, 227, 247,0.6);
+    display: flex;
+    justify-content: space-around;
+    &__card {
+        width: 20%;
+        @include flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
     }
 }
