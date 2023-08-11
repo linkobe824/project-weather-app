@@ -53,7 +53,7 @@ header {
   color: #f0f8fd;
 }
 .nav__search {
-  margin-right: 1rem;
+  margin-right: 10%;
   display: flex;
   align-items: center;
 }
@@ -67,7 +67,7 @@ header {
   background-color: transparent;
   border: none;
   color: #f0f8fd;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
@@ -98,9 +98,8 @@ main {
   align-items: center;
   justify-content: center;
 }
-.main__top__left img {
-  height: auto;
-  width: 6rem;
+.main__top__left #day-night-icon {
+  font-size: 3.5rem;
 }
 .main__top__center {
   display: flex;
@@ -109,7 +108,7 @@ main {
   justify-content: center;
 }
 .main__top__center .city {
-  font-size: 8rem;
+  font-size: 4rem;
 }
 .main__top__center .region-country {
   font-size: 2rem;
@@ -149,7 +148,7 @@ main {
   justify-content: center;
 }
 .main__middle__right .temp {
-  font-size: 15rem;
+  font-size: 12rem;
   display: flex;
 }
 .main__middle__right .temp__unit {

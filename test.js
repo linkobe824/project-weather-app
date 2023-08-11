@@ -1,10 +1,9 @@
-const api = "0b65e33d4c094f19a38192914230408";
-const url = `http://api.weatherapi.com/v1/forecast.json?key=${api}&q=culiacan&days=7`
+let str = '2023-08-11';
+let parts = str.split('-');
+let year = parseInt(parts[0]);
+let month = parseInt(parts[1], 10) - 1;
+let day = parseInt(parts[2], 10)
 
-async function test(){
-    const response = await fetch(url, {mode: "cors"});
-    const data = await response.json();
-    console.log(data);
-}
+const date= new Date('2023-08-14');
 
-test();
+console.log(date.getDay());

@@ -69,7 +69,7 @@ header {
     }
 
     &__search{
-        margin-right: 1rem;
+        margin-right: 10%;
         @include flex;
 
         #nav__input{
@@ -83,7 +83,7 @@ header {
             background-color: transparent;
             border: none;
             color: $title-color;
-            transition: background-color 0.5s ease-in-out;
+            transition: background-color 0.2s ease-in-out;
             border-top-right-radius: 3px;
             border-bottom-right-radius: 3px;
             &:hover {
@@ -115,9 +115,8 @@ main {
         @include flex;
         justify-content: center;
         
-        img {
-            height: auto;
-            width: 6rem;
+        #day-night-icon {
+            font-size: 3.5rem;
         }
     }
     &__center{
@@ -126,7 +125,7 @@ main {
         justify-content: center;
 
         .city {
-            font-size: 8rem;
+            font-size: 4rem;
         }
         .region-country {
             font-size: 2rem;
@@ -170,7 +169,7 @@ main {
         @include flex;
         justify-content: center;
         .temp {
-            font-size: 15rem;
+            font-size: 12rem;
             display: flex;
             &__unit {
                 font-size: 4rem;
